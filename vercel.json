@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/owner.access", "destination": "/admin.html" }
-  ]
-}
