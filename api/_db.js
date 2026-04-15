@@ -1,7 +1,7 @@
 const { neon } = require('@neondatabase/serverless');
 const crypto = require('crypto');
 
-const sql = neon(process.env.DATABASE_URL || process.env.POSTGRES_URL);
+const sql = neon(process.env.DATABASE_URL || process.env.POSTGRES_URL || process.env.POSTGRES_URL_NON_POOLING);
 
 const ADMIN_USER = '/owner.access';
 const ADMIN_PASS = '652712';
